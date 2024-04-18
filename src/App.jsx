@@ -1,11 +1,11 @@
 import {Link,Outlet} from 'react-router-dom'
 
-const App = () => (
+export const App = () => (
   <div>
-    <h1>Super Store</h1>
+    <h1>Designový nábytek</h1>
     <nav>
-      <Link to="/about">About</Link> |{' '}
-      <Link to="/contact">Contact</Link>
+      <Link to="/">Main Page</Link> |{' '}
+      <Link to="/product">Products</Link>
     </nav>
     <main>
       <Outlet />

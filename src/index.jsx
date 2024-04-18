@@ -33,7 +33,8 @@ const router = createBrowserRouter([
       },
     ]
   },
-]);
+], {basename:"/xxxmuck"}
+);
 
 createRoot(
   document.querySelector('#app'),
