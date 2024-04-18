@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:rgb(238, 236, 236);
+  max-width:100%;
+  margin:0;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(./img/rocket.svg);
+  background-size: contain;
+}
+
+.list{
+  list-style-type: none;
+  display: flex;
+  flex-wrap:wrap;
+}
