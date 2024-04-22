@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import React from 'react';
 import { HomePage } from './pages/HomePage';
+import { ProductPage } from './components/ProductPage'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -8,15 +9,6 @@ import {
 import './global.css';
 import { App } from './App'
 
-
-function ProductPage() {
-  return (
-    <>
-      <h2>Contact</h2>
-      <p>Lorem ipsum...</p>
-    </>
-  );
-}
 
 const router = createBrowserRouter([
   {
