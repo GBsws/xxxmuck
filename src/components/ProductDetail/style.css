@@ -1,0 +1,34 @@
+.product_detail {
+  display: flex;
+  background-color:#ffffff;
+  max-width: 38rem; 
+  height:100vh;
+  margin:0 auto;
+  padding-top:50px;
+  padding-left:20px;
+}
+
+.pd_img{
+  height:300px;
+  width:auto;
+  padding-right:40px;
+}
+.pd_desc {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+}
+
+.pd_title {
+  padding-bottom:30px;
+  font-weight:bold;
+  font-size:large
+}
+
+.pd_button{
+  color:white;
+  background-color: #000000;
+  padding:20px 15px;
+  border:none;
+}
+

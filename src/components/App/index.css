@@ -1,0 +1,7 @@
+.container {
+  max-width: 38rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:white;
+  height:100vh;
+}

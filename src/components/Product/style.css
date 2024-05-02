@@ -1,0 +1,17 @@
+.product_container{
+  margin:30px;
+}
+.product_image{
+  height:100px;
+  width:100px;
+}
+
+.product_name{
+  font-weight: 200;
+  font-size:small;
+  text-decoration:none;
+  color:black;
+}
+.product_name:hover {
+  transform:scale(1.1);
+}

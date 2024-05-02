@@ -1,8 +1,8 @@
-import { Header } from '../../components/Header/Header';
 import './style.css';
 import { Description } from '../../components/Description/Description';
 import { useState, useEffect} from "react"
 import { Product } from '../../components/Product/Product';
+import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
   const [ products, setProducts] = useState([])
@@ -15,28 +15,34 @@ export const HomePage = () => {
        console.log(data)
      }
      fetchData();
-}, [])
+    }, [])
+
+   if (products ===null) {
+    return <div>Loading...</div>
+   }
   return (
     <>
     <div className="container">
-       <header>
-         <Header />
-       </header>
-         <Description />
        <main>
-        <ul className="list">
-        {products.map(item=><Product {...item}/>
-          )}
-          </ul>
+         <Description />
+      
+        <div className="list">
+        {products &&
+        products.map(({id,name,image})=>{
+          return (
+            <Link to={`/product/${id}`} key={id}>
+              <Product id={id} name={name} image={image}/>
+            </Link>
+              )})}
+          </div>
         </main> 
-        
+      </div>
         
         <footer>
          <p>Czechitas, Digitální akademie: Web</p>
        </footer>
-     </div>
+    
     </>
   );
-};
-
-// {CORE_CONCEPTS.map((conceptItem)=> <CoreConcept key={conceptItem.title} {...conceptItem} />)} 
+;
+}

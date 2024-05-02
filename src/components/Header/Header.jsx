@@ -1,7 +1,9 @@
 import './style.css'
 
 export const Header = ()=>{
-  return(<>
-  <h1>XXXMuck</h1>
-</>)
+  return(
+  <>
+  <h1 className="header">XXXMuck</h1>
+  </>
+)
 }

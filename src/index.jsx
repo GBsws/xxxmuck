@@ -1,14 +1,12 @@
 import { createRoot } from 'react-dom/client';
-import React from 'react';
-import { HomePage } from './pages/HomePage';
-import { ProductPage } from './components/ProductPage'
+import { HomePage } from './pages/HomePage/HomePage'
+import { ProductPage } from './pages/ProductPage/ProductPage';
 import {
   createBrowserRouter,
-  RouterProvider,
+  RouterProvider
 } from 'react-router-dom';
 import './global.css';
-import { App } from './App'
-
+import { App } from './components/App/App';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +18,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/product',
+        path: '/product/:productId',
         element: <ProductPage />,
       },
     ]

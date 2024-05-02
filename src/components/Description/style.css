@@ -16,9 +16,11 @@ p {
 .second{
   margin-top:0px;
 }
-.caption h3{
-  margin-top: 3rem;
-}
+
 h3,p {
   text-align:center;
+}
+
+h3{
+  margin-top:0;
 }
